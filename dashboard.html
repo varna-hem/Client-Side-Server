@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaning Admin Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2 class="brand">LETS CLEAN</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Bookings</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Customers</a></li>
+ <!-- ✅ New Logout Button -->
+  <li>
+    <button id="logoutBtn" class="logout-button">Logout</button>
+  </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Welcome Admin!</h1>
+      <p>This is your dashboard. Here you can manage your bookings, services, and customer details.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Total Bookings</h3>
+          <p>25</p>
+        </div>
+        <div class="card">
+          <h3>New Customers</h3>
+          <p>5</p>
+        </div>
+        <div class="card">
+          <h3>Completed Jobs</h3>
+          <p>20</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ✅ Correct script link -->
+    <!-- Your content ends here -->
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const logoutBtn = document.getElementById("logoutBtn");
+
+      if (logoutBtn) {
+        logoutBtn.addEventListener("click", function () {
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "login.html";
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>

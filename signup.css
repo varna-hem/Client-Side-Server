@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 20;
+  padding: 20;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #8f9193;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.signup-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  color: #5d7d95;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tagline {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  background-color: #848c93;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #464f55;
+}
+
+.signin-text {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signin-text a {
+  color: #929698;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #616461;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: none;
+  font-size: 14px;
+  z-index: 999;
+}
